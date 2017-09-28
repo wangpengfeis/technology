@@ -1,0 +1,10 @@
+正则：
+ 1.正则匹配某一段文字
+ var str = '<div><head><span>i love you</span></head></div>',
+         reg = /head(.+)head/g;
+     console.log(str.replace(reg,'http://~www~bbb~com'));
+ 2.输入框只能输入数字或者小数。
+ var value=input.replace(/[^\.\d]/g,'');
+ if(input.split('.').length>2){
+     value=input.split('.')[0]+'.'+input.split('.')[1]
+ }
